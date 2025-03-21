@@ -1,0 +1,244 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Booking Cart
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <header class="bg-white shadow-sm">
+   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="text-2xl">
+     <i class="fas fa-plane">
+     </i>
+    </div>
+    <nav class="space-x-8">
+     <a class="text-gray-700 hover:text-black" href="#">
+      FLIGH
+     </a>
+     <a class="text-gray-700 hover:text-black" href="#">
+      BOOKINGS
+     </a>
+     <a class="text-gray-700 hover:text-black" href="#">
+      MILEA
+     </a>
+     <a class="text-gray-700 hover:text-black" href="#">
+      FLIGHT
+     </a>
+    </nav>
+    <div class="space-x-4">
+     <i class="fas fa-search text-gray-700">
+     </i>
+     <i class="fas fa-shopping-cart text-gray-700">
+     </i>
+     <i class="fas fa-user text-gray-700">
+     </i>
+    </div>
+   </div>
+  </header>
+  <main class="container mx-auto px-4 py-8">
+   <div class="text-sm text-gray-600 mb-4">
+    Booking Cart /
+    <span class="font-bold">
+     Step 1/2
+    </span>
+   </div>
+   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 bg-gray-200 p-8 rounded-lg">
+     <h2 class="text-2xl font-bold mb-6">
+      Booking Cart
+     </h2>
+     <div class="space-y-4">
+      <div class="grid grid-cols-5 gap-4 items-center">
+       <img alt="Business Class Flight Ticket" class="col-span-1 rounded-lg" src="https://placehold.co/100x100"/>
+       <div class="col-span-4">
+        <div class="flex justify-between items-center">
+         <div>
+          <h3 class="font-bold">
+           Business Class Flight Ticket
+          </h3>
+          <p class="text-sm text-gray-600">
+           Blue
+          </p>
+         </div>
+         <div class="flex space-x-4 items-center">
+          <select class="border border-gray-300 rounded p-2">
+           <option>
+            MIA
+           </option>
+          </select>
+          <input class="border border-gray-300 rounded p-2 w-16" type="number" value="2"/>
+          <p class="font-bold">
+           $
+          </p>
+          <i class="fas fa-times text-gray-600">
+          </i>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="grid grid-cols-5 gap-4 items-center">
+       <img alt="In-flight Meal" class="col-span-1 rounded-lg" src="https://placehold.co/100x100"/>
+       <div class="col-span-4">
+        <div class="flex justify-between items-center">
+         <div>
+          <h3 class="font-bold">
+           In-flight Meal
+          </h3>
+          <p class="text-sm text-gray-600">
+           Sliced
+          </p>
+         </div>
+         <div class="flex space-x-4 items-center">
+          <select class="border border-gray-300 rounded p-2">
+           <option>
+            Vegetarian
+           </option>
+          </select>
+          <input class="border border-gray-300 rounded p-2 w-16" type="number" value="1"/>
+          <p class="font-bold">
+           $ 15.99
+          </p>
+          <i class="fas fa-times text-gray-600">
+          </i>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="grid grid-cols-5 gap-4 items-center">
+       <img alt="Flight Control" class="col-span-1 rounded-lg" src="https://placehold.co/100x100"/>
+       <div class="col-span-4">
+        <div class="flex justify-between items-center">
+         <div>
+          <h3 class="font-bold">
+           Flight Control
+          </h3>
+          <p class="text-sm text-gray-600">
+           Red
+          </p>
+         </div>
+         <div class="flex space-x-4 items-center">
+          <select class="border border-gray-300 rounded p-2">
+           <option>
+            3m
+           </option>
+          </select>
+          <input class="border border-gray-300 rounded p-2 w-16" type="number" value="1"/>
+          <p class="font-bold">
+           $ 50.49
+          </p>
+          <i class="fas fa-times text-gray-600">
+          </i>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="mt-8">
+      <div class="flex justify-between items-center">
+       <p class="font-bold">
+        Total cost:
+       </p>
+       <p class="font-bold">
+        $ 417.47
+       </p>
+      </div>
+      <div class="flex justify-between items-center">
+       <p class="font-bold">
+        Additional
+       </p>
+       <p class="font-bold">
+        $ 20.00
+       </p>
+      </div>
+      <div class="flex justify-between items-center mt-4">
+       <p class="text-xl font-bold">
+        Final Cost:
+       </p>
+       <p class="text-xl font-bold">
+        $
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="bg-blue-900 text-white p-8 rounded-lg">
+     <h2 class="text-2xl font-bold mb-6">
+      Passenger Details
+     </h2>
+     <form class="space-y-4">
+      <div class="grid grid-cols-2 gap-4">
+       <input class="border border-gray-300 rounded p-2 text-black" placeholder="First Name" type="text"/>
+       <input class="border border-gray-300 rounded p-2 text-black" placeholder="Middle Name" type="text"/>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+       <input class="border border-gray-300 rounded p-2 text-black" placeholder="Last" type="text"/>
+       <input class="border border-gray-300 rounded p-2 text-black" placeholder="Date of" type="text"/>
+      </div>
+      <input class="border border-gray-300 rounded p-2 w-full text-black" placeholder="Email Address" type="email"/>
+      <input class="border border-gray-300 rounded p-2 w-full text-black" placeholder="Phone Number" type="tel"/>
+      <input class="border border-gray-300 rounded p-2 w-full text-black" placeholder="Passport Number" type="text"/>
+      <input class="border border-gray-300 rounded p-2 w-full text-black" placeholder="Nationality" type="text"/>
+      <input class="border border-gray-300 rounded p-2 w-full text-black" placeholder="Address Line 1" type="text"/>
+      <input class="border border-gray-300 rounded p-2 w-full text-black" placeholder="Address Line 2" type="text"/>
+      <div class="grid grid-cols-2 gap-4">
+       <input class="border border-gray-300 rounded p-2 text-black" placeholder="Postal/Zip Code" type="text"/>
+       <input class="border border-gray-300 rounded p-2 text-black" placeholder="Country" type="text"/>
+      </div>
+      <input class="border border-gray-300 rounded p-2 w-full text-black" placeholder="City" type="text"/>
+      <div class="flex items-center">
+       <input class="mr-2" id="billing" type="checkbox"/>
+       <label class="text-sm" for="billing">
+        Use for Billing
+       </label>
+      </div>
+      <button class="bg-black text-white py-2 px-4 rounded w-full" type="submit">
+       Payment &gt;
+      </button>
+     </form>
+    </div>
+   </div>
+  </main>
+  <footer class="bg-white py-8 mt-16">
+   <div class="container mx-auto px-4 flex justify-between items-center">
+    <div>
+     <h3 class="font-bold">
+      FlyHigh
+     </h3>
+     <p class="text-sm text-gray-600">
+      Your ultimate flight management system since 2020
+     </p>
+     <p class="text-sm text-gray-600">
+      FlyHigh © 2022
+     </p>
+    </div>
+    <div class="space-y-2 text-sm text-gray-600">
+     <p>
+      Help Center
+     </p>
+     <p>
+      Knowledge Base
+     </p>
+     <p>
+      Support Team
+     </p>
+     <p>
+      User Manual
+     </p>
+     <p>
+      Get in touch
+     </p>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

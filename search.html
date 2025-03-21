@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>Flight Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <div class="flex justify-between items-center mb-4">
+            <input type="text" placeholder="Search flights, bookings, mileage, operations" class="w-2/3 p-2 border border-gray-300 rounded">
+            <button class="p-2 bg-gray-200 rounded"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="bg-white p-8 rounded shadow-md w-full max-w-lg mx-auto">
+            <h1 class="text-2xl font-bold mb-4">Search</h1>
+            <div class="mb-4">
+                <label class="block text-gray-700">Departure city</label>
+                <div class="flex items-center space-x-2">
+                    <div class="flex-1 h-2 bg-gray-300 rounded-full"></div>
+                    <div class="flex-1 h-2 bg-gray-300 rounded-full"></div>
+                    <div class="flex-1 h-2 bg-gray-300 rounded-full"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Arrival city</label>
+                <input type="text" value="NYC" class="w-full p-2 border border-gray-300 rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Date of departure</label>
+                <input type="date" value="2023-10-15" class="w-full p-2 border border-gray-300 rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Flight class</label>
+                <div class="flex space-x-4">
+                    <button class="flex-1 p-4 bg-blue-100 border border-gray-300 rounded text-center">
+                        <i class="fas fa-plane text-blue-500"></i>
+                        <p class="text-blue-500">Economy</p>
+                    </button>
+                    <button class="flex-1 p-4 bg-gray-200 border border-gray-300 rounded text-center">
+                        <i class="fas fa-briefcase text-gray-500"></i>
+                        <p class="text-gray-500">Business</p>
+                    </button>
+                    <button class="flex-1 p-4 bg-gray-200 border border-gray-300 rounded text-center">
+                        <i class="fas fa-crown text-gray-500"></i>
+                        <p class="text-gray-500">First Class</p>
+                    </button>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Number of passengers</label>
+                <div class="flex space-x-4">
+                    <div class="flex-1">
+                        <label class="block text-gray-700">Adults</label>
+                        <input type="number" value="1" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div class="flex-1">
+                        <label class="block text-gray-700">Children</label>
+                        <input type="number" value="0" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div class="flex-1">
+                        <label class="block text-gray-700">Infants</label>
+                        <input type="number" value="0" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Seat preference</label>
+                <div class="flex space-x-4">
+                    <label class="flex items-center">
+                        <input type="checkbox" class="mr-2" checked>
+                        <span>Window</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" class="mr-2" checked>
+                        <span>Aisle seat</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Additional options</label>
+                <div class="flex space-x-4">
+                    <label class="flex items-center">
+                        <input type="checkbox" class="mr-2" checked>
+                        <span>Flexible dates</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" class="mr-2" checked>
+                        <span>Direct flight</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" class="mr-2" checked>
+                        <span>In-flight</span>
+                    </label>
+                </div>
+            </div>
+            <div class="flex justify-between items-center">
+                <button class="text-gray-500">Clear</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+            </div>
+        </div>
+        <footer class="mt-8 text-gray-500 text-sm">
+            <div class="flex justify-between">
+                <div>
+                    <p class="font-bold">FlyHigh</p>
+                    <p>Your ultimate flight management system since 2020!</p>
+                    <p>FlyHigh © 2022</p>
+                </div>
+                <div class="text-right">
+                    <p class="font-bold">Help Center</p>
+                    <p>Knowledge Base</p>
+                    <p>Support Team</p>
+                    <p>User Manual</p>
+                    <p>Get in touch</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

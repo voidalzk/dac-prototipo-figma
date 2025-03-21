@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <title>SkylineAir Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <i class="fas fa-plane text-blue-500 text-2xl mr-2"> </i>
+          <span class="text-xl font-bold"> SkylineAir </span>
+        </div>
+        <nav class="space-x-4">
+          <a class="text-gray-600 hover:text-gray-800" href="#"> Dashboard </a>
+          <a class="text-gray-600 hover:text-gray-800" href="#"> Bookings </a>
+          <a class="text-gray-600 hover:text-gray-800" href="#"> Account </a>
+        </nav>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+      <div
+        class="bg-white p-6 rounded-lg shadow-md flex items-center space-x-6"
+      >
+        <img
+          alt="Profile picture of Johnathan Doe"
+          class="w-24 h-24 rounded-full"
+          src="https://placehold.co/100x100"
+        />
+        <div>
+          <h2 class="text-2xl font-bold">Johnathan Doe</h2>
+          <p class="text-gray-600">Mileage: 25,000 miles</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <!-- Upcoming Flights -->
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">Upcoming Flights</h3>
+          <div class="bg-white p-4 rounded-lg flex items-center space-x-4 mb-4">
+            <img
+              alt="Flight A123 logo"
+              class="w-12 h-12 rounded"
+              src="https://placehold.co/50x50"
+            />
+            <div>
+              <p class="font-bold">Flight A123</p>
+              <p class="text-gray-600">Departure: 14:00, 22nd Oct</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg flex items-center space-x-4">
+            <img
+              alt="Flight B456 logo"
+              class="w-12 h-12 rounded"
+              src="https://placehold.co/50x50"
+            />
+            <div>
+              <p class="font-bold">Flight B456</p>
+              <p class="text-gray-600">Departure: 09:30, 24th Oct</p>
+            </div>
+          </div>
+        </div>
+        <!-- Mileage Tracking -->
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">Mileage Tracking</h3>
+          <div class="flex justify-center items-center h-full">
+            <img
+              alt="Graph showing mileage tracking"
+              class="w-48 h-24"
+              src="https://placehold.co/200x100"
+            />
+          </div>
+        </div>
+        <!-- Flight Operations -->
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">Flight Operations</h3>
+          <div
+            class="bg-white p-4 rounded-lg flex justify-between items-center mb-4"
+          >
+            <p class="font-bold">Flight C789</p>
+            <p class="text-gray-600">Status: On Time</p>
+          </div>
+          <div
+            class="bg-white p-4 rounded-lg flex justify-between items-center"
+          >
+            <p class="font-bold">Flight D012</p>
+            <p class="text-gray-600">Status: Delayed</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white py-6 mt-8">
+      <div class="container mx-auto px-4 flex justify-between">
+        <div>
+          <h4 class="font-bold">Contact Us</h4>
+          <p>Phone: +1 234 567 890</p>
+          <p>
+            Email:
+            <a class="text-blue-300" href="mailto:support@skylineair.com">
+              support@skylineair.com
+            </a>
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold">Quick Links</h4>
+          <ul>
+            <li>
+              <a class="text-blue-300" href="#"> Privacy Policy </a>
+            </li>
+            <li>
+              <a class="text-blue-300" href="#"> Terms of Service </a>
+            </li>
+            <li>
+              <a class="text-blue-300" href="#"> Help Center </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

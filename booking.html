@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <title>SkylineAir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <header class="flex justify-between items-center p-4 bg-white shadow-md">
+      <div class="flex items-center">
+        <i class="fas fa-plane-departure text-2xl mr-2"></i>
+        <span class="text-xl font-bold">SkylineAir</span>
+      </div>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-700">Login/Register</a>
+        <a href="#" class="text-gray-700">Flight Booking</a>
+        <a href="#" class="text-gray-700">Dashboard</a>
+      </nav>
+    </header>
+    <div class="flex p-4">
+      <aside class="w-1/4 p-4 bg-white shadow-md">
+        <h2 class="text-lg font-bold mb-4">Filters</h2>
+        <div class="mb-4">
+          <h3 class="font-semibold">Price Range</h3>
+          <input type="range" class="w-full" />
+        </div>
+        <div class="mb-4">
+          <h3 class="font-semibold">Airlines</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="airline1" /><label
+                for="airline1"
+                class="ml-2"
+                >Airline 1</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="airline2" /><label
+                for="airline2"
+                class="ml-2"
+                >Airline 2</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold">Class</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="economy" /><label
+                for="economy"
+                class="ml-2"
+                >Economy</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="business" /><label
+                for="business"
+                class="ml-2"
+                >Business</label
+              >
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="w-3/4 p-4">
+        <section class="mb-6 bg-white p-4 shadow-md">
+          <h2 class="text-lg font-bold mb-4">Search Flights</h2>
+          <div class="grid grid-cols-3 gap-4 mb-4">
+            <input
+              type="text"
+              placeholder="Departure City"
+              class="border p-2"
+            />
+            <input
+              type="text"
+              placeholder="Destination City"
+              class="border p-2"
+            />
+            <input type="text" placeholder="MM/DD/YYYY" class="border p-2" />
+          </div>
+          <button class="bg-blue-600 text-white px-4 py-2">Search</button>
+        </section>
+        <section class="mb-6 bg-white p-4 shadow-md">
+          <h2 class="text-lg font-bold mb-4">Available Flights</h2>
+          <div class="border p-4 mb-4 flex justify-between items-center">
+            <div>
+              <h3 class="font-semibold">Flight 101</h3>
+              <p>Departure: 09:00 AM - Arrival: 12:00 PM</p>
+            </div>
+            <button class="bg-blue-600 text-white px-4 py-2">
+              Select Seats
+            </button>
+          </div>
+          <div class="border p-4 flex justify-between items-center">
+            <div>
+              <h3 class="font-semibold">Flight 202</h3>
+              <p>Departure: 01:00 PM - Arrival: 04:00 PM</p>
+            </div>
+            <button class="bg-blue-600 text-white px-4 py-2">
+              Select Seats
+            </button>
+          </div>
+        </section>
+        <section class="mb-6 bg-white p-4 shadow-md">
+          <h2 class="text-lg font-bold mb-4">Passenger Details</h2>
+          <div class="grid grid-cols-2 gap-4 mb-4">
+            <input type="text" placeholder="Full Name" class="border p-2" />
+            <input type="text" placeholder="Phone Number" class="border p-2" />
+            <input type="email" placeholder="Email" class="border p-2" />
+            <input type="text" placeholder="Passport No." class="border p-2" />
+          </div>
+          <button class="bg-blue-600 text-white px-4 py-2">
+            Confirm Booking
+          </button>
+        </section>
+        <section class="bg-white p-4 shadow-md">
+          <h2 class="text-lg font-bold mb-4">Selected Flight: Flight 101</h2>
+          <p>Total Cost: $350</p>
+        </section>
+      </main>
+    </div>
+    <footer class="bg-white p-4 shadow-md mt-6">
+      <div class="flex justify-between">
+        <div>
+          <h3 class="font-bold">Contact Us</h3>
+          <p>Email: support@skylineair.com</p>
+          <p>Phone: +1 234 567 890</p>
+        </div>
+        <div>
+          <h3 class="font-bold">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-bold">Resources</h3>
+          <p>FAQs</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
